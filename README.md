@@ -1,14 +1,14 @@
-#Hotel Management System
+ï»¿#Hotel Management System
 
 ---
 
-## Team£º
-####  Çïµ¶ÓãµÄµ¶
-## Member£º
-* luluchenchen£¨PM£©
+## Teamï¼š
+####  ç§‹åˆ€é±¼çš„åˆ€
+## Memberï¼š
+* luluchenchenï¼ˆPMï¼‰
 * mahanlei
 * insomniaLee
 * candleflame
 
-##logo£º
-https://github.com/candleflame/Hotel-Management-System/blob/master/teamImage.png
+##logoï¼š
+https://github.com/candleflame/Hotel-Management-System/blob/master/teamImage.jpg
