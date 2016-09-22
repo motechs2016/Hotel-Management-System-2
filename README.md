@@ -10,5 +10,5 @@
 * insomniaLee
 * candleflame
 
-##logo：
-https://github.com/candleflame/Hotel-Management-System/blob/master/teamImage.jpg
+##logo:
+![](https://github.com/candleflame/Hotel-Management-System/blob/master/teamImage.jpg?raw=true")
