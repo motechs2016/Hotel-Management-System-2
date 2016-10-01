@@ -1,5 +1,0 @@
-015处理合理申诉的异常订单
-HandleExceptionOrder.Add.Credit
-修改为
-	网站营销人员修改了订单状态后，选择系统增加
-的客户信用值类型，参见Execution.Credit

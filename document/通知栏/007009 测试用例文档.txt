@@ -1,2 +1,0 @@
-007 RegisterMember.company.Submit.Invaild中invaild写错了 请帮忙改为invalid
-009 UpdateRoom.CheckOutRoom.In删掉
