@@ -1,0 +1,2 @@
+用例10制定酒店促销策略
+HotelStrategy.Check.Invalid 文字描述中在“请重新输入”后增加“返回编辑界面”
