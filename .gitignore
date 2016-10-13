@@ -2,5 +2,7 @@
 *.pages
 .metadata/*
 .recommenders/*
-.idea/*
-.bin/*
+*/.idea/*
+*/.bin/*
+*.classpath
+*project
