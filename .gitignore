@@ -6,4 +6,5 @@
 *.iml
 */.bin/*
 *.classpath
-*project
+*.project
+*.class
