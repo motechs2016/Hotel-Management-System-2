@@ -15,7 +15,7 @@ public class ExceptionVO implements Serializable{
 	OrderType orderType;
 	/**异常情况　*/
 	String exception;
-	 public ExceptionVO(String orderID,OrderType orderType,String exception) {
+	public ExceptionVO(String orderID,OrderType orderType,String exception) {
 		 this.orderID=orderID;
 		 this.orderType=orderType;
 		 this.exception=exception;
