@@ -1,13 +1,13 @@
 package service.ManageService;
 
-import vo.CommonMemberVO;
-import vo.CompanyMemberVO;
-import vo.GetVO;
-import vo.HotelVO;
-import vo.MarketStaffVO;
-import vo.MemberTypeVO;
-import vo.UserVO;
-import vo.ChangeHotelVO;
+import VO.CommonMemberVO;
+import VO.CompanyMemberVO;
+import VO.GetVO;
+import VO.HotelVO;
+import VO.MarketStaffVO;
+import VO.MemberTypeVO;
+import VO.UserVO;
+import VO.ChangeHotelVO;
 
 /**
  * 所有客户管理界面所需要的服务

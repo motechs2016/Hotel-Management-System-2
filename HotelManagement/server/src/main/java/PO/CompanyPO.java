@@ -1,4 +1,4 @@
-package po;
+package PO;
 
 public class CompanyPO {
 	/**酒店工作人员用户名*/

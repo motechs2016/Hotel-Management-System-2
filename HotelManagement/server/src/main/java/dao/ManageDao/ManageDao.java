@@ -1,11 +1,11 @@
 package dao.ManageDao;
 
-import po.ClientPO;
-import po.CompanyPO;
-import po.CreditPO;
-import po.HotelPO;
-import po.MemberInfoPO;
-import po.UserPO;
+import PO.ClientPO;
+import PO.CompanyPO;
+import PO.CreditPO;
+import PO.HotelPO;
+import PO.MemberInfoPO;
+import PO.UserPO;
 
 
 /*
