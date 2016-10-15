@@ -6,7 +6,9 @@ package VO;
  */
 import util.OrderType;
 
-public class ExceptionVO {
+import java.io.Serializable;
+
+public class ExceptionVO implements Serializable{
 	/**订单编号　*/
 	String orderID;
 	/**订单类型　*/

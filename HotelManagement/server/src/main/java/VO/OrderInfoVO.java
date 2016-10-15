@@ -2,12 +2,14 @@ package VO;
 
 import util.OrderType;
 
+import java.io.Serializable;
+
 /**
  * 订单信息
  * @author Administrator
  * @version 2016/10/15 18:44
  */
-public class OrderInfoVO {
+public class OrderInfoVO implements Serializable{
 	/**订单编号 */
 	String orderID;
 	/**客户用户名*/

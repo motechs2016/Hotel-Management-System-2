@@ -9,11 +9,11 @@ package util;
  */
 public enum UserType {
 	/** 客户*/
-    Client,
+    CLIENT,
     /**酒店工作人员 */
-    HotelStaff,
+    HOTELSTAFF,
     /**网站营销人员 */
-    WebsiteMarketer,
+    WEBSITEMARKERER,
     /**网站管理人员 */
-    WebsiteManager,
+    WEBSITEMANAGER,
 }

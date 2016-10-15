@@ -23,7 +23,7 @@ public interface OrderDao {
 	public OrderPO getOrderInfo (String orderID);
 	/**
 	 * 更新订单详细信息
-	 * @param orderInfoPO
+	 * @param orderPO
 	 * @return boolean
 	 * @author mahanlei
 	 * @version 2016/10/15
