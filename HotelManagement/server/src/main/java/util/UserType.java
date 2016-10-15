@@ -1,11 +1,19 @@
 package util;
 
-/**
- * Created by Dell on 2016/10/15.
+/**用户的所有类型
+ * @author Dell 
+ * @version 2016/10/15 
+ * 用户的类型有：
+ * 客户、酒店工作人员、网站营销人员、网站管理人员
+ * 
  */
 public enum UserType {
+	/** 客户*/
     Client,
-    HotelManager,
-    WebsiteMarketingStaff,
-    Administrator
+    /**酒店工作人员 */
+    HotelStaff,
+    /**网站营销人员 */
+    WebsiteMarketer,
+    /**网站管理人员 */
+    WebsiteManager,
 }
