@@ -1,4 +1,4 @@
-package vo;
+package VO;
 
 import java.io.Serializable;
 /**
