@@ -1,0 +1,1 @@
+006 评价酒店功能 第三条下面添加 AssessHotel.Input.Point 内容是 系统显示并允许客户选择评分
