@@ -1,0 +1,37 @@
+package dao.LoginDao;
+
+import PO.ClientPO;
+import util.registerMessage;
+
+/**
+ * 负责实现登陆界面所需要的服务
+ * @author lichen
+ * @version 2016年10月15日
+ */
+
+
+public interface LoginDao {
+	/**
+	 * 用户登陆／注册
+	 * @return ID
+	 * @author lichen
+	 * @version 2016年10月15日
+	 */
+	public boolean login(String name,String password);
+	/**
+	 * 登陆
+	 * @param name 用户名
+	 * @param password 密码
+	 * @return boolean 登陆成功／失败
+	 * @author lichen
+	 * @version 2016年10月15日
+	 */
+	public registerMessage register(ClientPO clientPO);
+	/**
+	 * 注册
+	 * @param clientPO 用户信息表单
+	 * @return registerMessage 注册信息
+	 * @author lichen
+	 * @version 2016年10月15日
+	 */
+}
