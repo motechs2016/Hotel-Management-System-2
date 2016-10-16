@@ -12,7 +12,7 @@ public class ChangeHotelVO implements Serializable {
 	
 	public enum Type {type1,type2,type3,type4};//类型的个数有待修改，，，
 	/**修改的客户名*/
-	String client;
+	public String client;
 	/**修改的类型*/
 	UserType type;
 	

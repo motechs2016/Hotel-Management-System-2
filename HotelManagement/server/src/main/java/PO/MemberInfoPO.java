@@ -12,7 +12,7 @@ public class MemberInfoPO {
 	/**等级对应的信用度*/
 	int credit;
 	
-	MemberInfoPO(int rank,int credit){
+	public MemberInfoPO(int rank,int credit){
 		this.rank=rank;
 		this.credit=credit;
 	}

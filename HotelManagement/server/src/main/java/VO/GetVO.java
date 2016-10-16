@@ -3,6 +3,7 @@ package VO;
 import java.io.Serializable;
 
 import util.GetVOType;
+import util.UserType;
 
 /**
  * 
@@ -15,10 +16,10 @@ public class GetVO implements Serializable {
 	
 	/**用户名*/
 	String clientname;
-	/**执行类型*/
-	GetVOType type;
+	/**用户类型*/
+	public UserType type;
 	
-	public GetVO(String clientname,GetVOType type) {
+	public GetVO(String clientname,UserType type) {
 		this.clientname=clientname;
 		this.type=type;
 	}

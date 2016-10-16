@@ -28,14 +28,6 @@ import PO.UserPO;
  */
 public interface  ManageDao {
 
-	/**
-	 * 给用户充值
-	 * @param client,number
-	 * @return 是否充值成功
-	 * @author insomnia
-	 * @version Oct 15, 2016
-	 */
-	public boolean recharge (CreditPO creditpo);
 	
 	/**
 	 * 添加一个网站营销人员
@@ -100,49 +92,6 @@ public interface  ManageDao {
 	 * @version Oct 15, 2016
 	 */
 	public MemberInfoPO getMemberType();
-	
-	/**
-	 * 用户注册普通会员
-	 * @param commonMember
-	 * @return 是否成功注册普通会员
-	 * @author insomnia
-	 * @version Oct 15, 2016
-	 */
-	public boolean registerCommonMember(ClientPO commonMember);
-	
-	/**
-	 * 用户注册企业会员
-	 * @param companyMember
-	 * @return 是否成功注册企业会员
-	 * @author insomnia
-	 * @version Oct 15, 2016
-	 */
-	public boolean registerCompanyMember(ClientPO companyMember);
-	
-	/**
-	 *为酒店添加合作企业
-	 * @param company
-	 * @return 是否成功添加企业会员
-	 * @author insomnia
-	 */
-	public boolean addCompany(CompanyPO company);
-	
-	/**
-	 * 为酒店修改合作企业信息
-	 * @param company
-	 * @return 是否成功修改企业会员信息
-	 * @author insomnia
-	 */
-	public boolean changeCompany(CompanyPO company);
-	
-	/**
-	 * 删除酒店的合作企业信息
-	 * @param company
-	 * @return 是否成功删除合奏企业会员信息
-	 * @author insomnia
-	 */
-	public boolean deleteCompany(CompanyPO company);
-	
 	
 
 }

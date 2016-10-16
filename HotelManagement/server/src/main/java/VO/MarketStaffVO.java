@@ -8,9 +8,9 @@ import java.io.Serializable;
  */
 public class MarketStaffVO implements Serializable {
 	/**用户名*/
-	String name;
+	public String name;
 	/**密码*/
-	String password;
+	public String password;
 	
 	public MarketStaffVO(String name,String password){
 		this.name=name;

@@ -8,6 +8,8 @@ import VO.HotelVO;
 import VO.MarketStaffVO;
 import VO.MemberTypeVO;
 import VO.UserVO;
+import util.Message;
+import util.UserType;
 
 /**
  * 
@@ -27,12 +29,13 @@ public class ManageService_stub {
 	 * @version Oct 15, 2016
 	 */
 	public boolean recharge (String client,int number){
-		if (get.getGetVO().){
+		if (client.equals("000")){
 			return true;
-		}else{
+		}else {
 			return false;
 		}
 	}
+
 	
 	/**
 	 * 添加一个网站营销人员
@@ -41,7 +44,18 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean addMarketStaff(MarketStaffVO marketStaff);
+	public Message addMarketStaff(MarketStaffVO marketStaff){
+		MarketStaffVO get=marketStaff.getMarketStaffVO();
+		if(get.name.equals("000")){
+			return Message.SUCCESS;
+		}
+		else if(get.name.equals("001")){
+			return Message.FAIL;
+		}else {
+			return Message.NOT_COMPLETE;
+		}
+		
+	}
 	
 	/**
 	 * 添加一个酒店
@@ -50,7 +64,17 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean addHotel(HotelVO hotel);
+	public Message addHotel(HotelVO hotel){
+		HotelVO get=hotel.getHotelVO();
+		if(get.staffName.equals("000")){
+			return Message.SUCCESS;
+		}
+		else if(get.staffName.equals("001")){
+			return Message.FAIL;
+		}else{
+			return Message.NOT_COMPLETE;
+		}
+	}
 	
 	/**
 	 * 得到酒店信息
@@ -59,7 +83,16 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public HotelVO getHotelInfo(GetVO get);//getVO 里面包含了用户名和type
+	public HotelVO getHotelInfo(GetVO get){
+		GetVO getVO=get.getGetVO();
+		if(getVO.type.equals(UserType.WEBSITEMANAGER)){
+			return new HotelVO("如家酒店", "南京最实惠的酒店", "南京市新街口", "新街口", "早餐供应", '3', "rujiaadmin", 5.0, 100, new String []{"南京大学"});
+		}else if (getVO.type.equals(UserType.HOTELSTAFF)){
+			return new HotelVO("如家酒店", "南京最实惠的酒店", "南京市新街口", "新街口", "早餐供应", '3', "rujiaadmin", 5.0, 100, new String []{"南京大学"});
+		}else {
+			return new HotelVO("如家酒店", "南京最实惠的酒店", "南京市新街口", "新街口", "早餐供应", '3', "rujiaadmin", 5.0, 100, new String []{"南京大学"});
+		}
+	}
 	
 	/**
 	 * 得到用户信息
@@ -68,7 +101,14 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public UserVO getUserInfo(GetVO get);//getVO同上
+	public UserVO getUserInfo(GetVO get){
+		GetVO getvo=get.getGetVO();
+		if (getvo.type.equals(UserType.WEBSITEMANAGER)){
+			return new UserVO("github",UserType.CLIENT,"15098676453","1997.4.11",1,0,"南京大学仙林校区");
+		}else{
+			return new UserVO("github",UserType.CLIENT,"15098676453","1997.4.11",1,0,"南京大学仙林校区" );
+		}
+	}
 	
 	/**
 	 * 修改酒店信息
@@ -77,9 +117,16 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean changeHotelInfo(ChangeHotelVO hotel);
-	   //changeHotelVO里面包含了String client,Type type ,HotelVO hotelVO
-	
+	public Message changeHotelInfo(ChangeHotelVO hotel){
+		ChangeHotelVO changeHotel=hotel.getChangeHotelVO();
+		if (changeHotel.client.equals("000")){
+			return Message.SUCCESS;
+		}else if(changeHotel.client.equals("001")){
+			return Message.FAIL;
+		}else{
+			return Message.NOT_COMPLETE;
+		}
+	}
 	/**
 	 * 修改用户信息
 	 * @param user
@@ -87,7 +134,16 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean changeUserInfo(UserVO user);
+	public Message changeUserInfo(UserVO user){
+		UserVO userVO=user.getUserVO();
+		if(userVO.name.equals("000")){
+			return Message.SUCCESS;
+		}else if (userVO.name.equals("001")){
+			return Message.FAIL;
+		}else{
+			return Message.NOT_COMPLETE;
+		}
+	}
 	
 	/**
 	 * 获得会员类型
@@ -96,7 +152,9 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public MemberTypeVO getMemberType(String clientName);
+	public MemberTypeVO getMemberType(String clientName){
+		return new MemberTypeVO ("普通会员","一级会员200，二级会员300");
+	}
 	
 	/**
 	 * 用户注册普通会员
@@ -105,7 +163,9 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean registerCommomMember(CommonMemberVO commonMember);
+	public Message registerCommomMember(CommonMemberVO commonMember){
+		return Message.SUCCESS;
+	}
 	
 	/**
 	 * 用户注册企业会员
@@ -114,8 +174,18 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean registerCompanyMember(CompanyMemberVO companyMember);
-	
+	public Message registerCompanyMember(CompanyMemberVO companyMember){
+		return Message.SUCCESS;
+	}
+	/**
+	 * 获得酒店的客房价格
+	 * @param hotelID
+	 * @return 酒店客房的价格
+	 * @author insomnia
+	 */
+	public double[] getPrices(String hotelID ){
+		return new double []{2,35,75};
+	}
 	
 	
 

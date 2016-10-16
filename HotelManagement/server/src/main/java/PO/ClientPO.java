@@ -1,4 +1,7 @@
 package PO;
+
+import util.UserType;
+
 /**
  * 
  * @author insomnia
@@ -8,7 +11,7 @@ public class ClientPO {
 	/**用户名*/
 	String name;
 	/**客户类型*/
-	char type;
+	UserType type;
 	/**联系方式*/
 	String contact;
 	/**生日*/
@@ -20,7 +23,7 @@ public class ClientPO {
 	/**企业会员的企业名称*/
 	String enterpriseName;
 	public ClientPO(String name,
-					char type,
+					UserType type,
 					String contact,
 					String birthday,
 					int rank,
@@ -37,7 +40,7 @@ public class ClientPO {
 	public String getName() {
 		return name;
 	}
-	public char getType() {
+	public UserType getType() {
 		return type;
 	}
 	public String getContact() {

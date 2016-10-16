@@ -21,7 +21,7 @@ public class HotelVO implements Serializable {
 	/**酒店的星级*/
 	char star;
 	/**酒店锁对应的酒店工作人员的用户名*/
-	String staffName;
+	public String staffName;
 	/**酒店的评分*/
 	double point;
 	/**评分的总人数*/

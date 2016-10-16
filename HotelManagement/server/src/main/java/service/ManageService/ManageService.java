@@ -7,6 +7,7 @@ import VO.HotelVO;
 import VO.MarketStaffVO;
 import VO.MemberTypeVO;
 import VO.UserVO;
+import util.Message;
 import VO.ChangeHotelVO;
 
 /**
@@ -45,7 +46,7 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean addMarketStaff(MarketStaffVO marketStaff);
+	public Message addMarketStaff(MarketStaffVO marketStaff);
 	
 	/**
 	 * 添加一个酒店
@@ -54,7 +55,7 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean addHotel(HotelVO hotel);
+	public Message addHotel(HotelVO hotel);
 	
 	/**
 	 * 得到酒店信息
@@ -81,7 +82,7 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean changeHotelInfo(ChangeHotelVO hotel);
+	public Message changeHotelInfo(ChangeHotelVO hotel);
 	   //changeHotelVO里面包含了String client,Type type ,HotelVO hotelVO
 	
 	/**
@@ -91,7 +92,7 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean changeUserInfo(UserVO user);
+	public Message changeUserInfo(UserVO user);
 	
 	/**
 	 * 获得会员类型
@@ -109,7 +110,7 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean registerCommomMember(CommonMemberVO commonMember);
+	public Message registerCommomMember(CommonMemberVO commonMember);
 	
 	/**
 	 * 用户注册企业会员
@@ -118,12 +119,13 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean registerCompanyMember(CompanyMemberVO companyMember);
+	public Message registerCompanyMember(CompanyMemberVO companyMember);
+	/**
+	 * 获得酒店的客房价格
+	 * @param hotelID
+	 * @return 酒店客房的价格
+	 * @author insomnia
+	 */
+	public double[] getPrices(String hotelID );
 	
-	
-	
-	
-	
-	
-
 }

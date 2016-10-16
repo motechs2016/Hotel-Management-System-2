@@ -1,6 +1,8 @@
 package VO;
 
 import java.io.Serializable;
+
+import util.UserType;
 /**
  * 
  * @author insomnia
@@ -8,11 +10,11 @@ import java.io.Serializable;
  */
 public class UserVO  implements Serializable{
 	/**用户名*/
-	String name;
+	public String name;
 	/**用户的类型*/
-	char type;
+	UserType type;
 	/**用户的联系方式*/
-	char contact;
+	String  contact;
 	/**用户的生日*/
 	String birthday;
 	/**用户的等级*/
@@ -23,8 +25,8 @@ public class UserVO  implements Serializable{
 	String enterpriseName;
 	
 	public UserVO(String name,
-				char type,
-				char contact,
+				UserType type,
+				String contact,
 				String birthday,
 				int rank,
 				int credit,
