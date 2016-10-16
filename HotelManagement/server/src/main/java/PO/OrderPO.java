@@ -1,6 +1,7 @@
 package PO;
 
 import util.OrderType;
+import util.RoomType;
 
 /**
  * 订单信息
@@ -18,7 +19,7 @@ public class OrderPO {
 	/** 酒店名称 */
 	String hotelName;
 	/** 房间类型 */
-	String roomType;
+	RoomType roomType;
 	/** 房间数量 */
 	int numberOfRoom;
 	/** 预计入住人数 */
@@ -40,7 +41,7 @@ public class OrderPO {
 	/** 撤销时间 */
 	String cancelTime;
 
-	public OrderPO(String orderID, String userName, OrderType orderType, String hotelName, String roomType,
+	public OrderPO(String orderID, String userName, OrderType orderType, String hotelName, RoomType roomType,
 			int numberOfRoom, int expectedNumberOfUser, boolean hasChild, String expectedInTime, String expectedOutTime,
 			String lastestTime, String actualInTime, String actualOutTime, String exception, String cancelTime) {
 		this.orderID = orderID;
@@ -76,7 +77,7 @@ public class OrderPO {
 		return hotelName;
 	}
 
-	public String getRoomType() {
+	public RoomType getRoomType() {
 		return roomType;
 	}
 
