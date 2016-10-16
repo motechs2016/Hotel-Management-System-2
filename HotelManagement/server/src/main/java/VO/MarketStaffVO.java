@@ -16,5 +16,9 @@ public class MarketStaffVO implements Serializable {
 		this.name=name;
 		this.password =password;
 	}
+	
+	public MarketStaffVO getMarketStaffVO(){
+		return new MarketStaffVO(name,password);
+	}
 
 }

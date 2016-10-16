@@ -61,6 +61,13 @@ public class OrderInfoVO implements Serializable{
 		this.cancelTime=cancelTime;
 	}
 	
+	public OrderInfoVO getOrderInfoVO(){
+		return new OrderInfoVO(orderID, userName, orderType, hotelName, roomType,  numberOfRoom,
+		            expectedNumberOfUser, hasChild, expectedInTime,  expectedOutTime,
+                    lastestTime,  actualInTime, actualOutTime,   exception,
+                    cancelTime);
+	}
+	
 	
           
 }

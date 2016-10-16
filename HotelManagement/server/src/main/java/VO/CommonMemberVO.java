@@ -18,5 +18,9 @@ public class CommonMemberVO  implements Serializable{
 		this.client=client;
 		this.rank=rank;
 	}
+	
+	public CommonMemberVO  getCommonMemberVO(){
+		return new CommonMemberVO(client,rank);
+	}
 
 }

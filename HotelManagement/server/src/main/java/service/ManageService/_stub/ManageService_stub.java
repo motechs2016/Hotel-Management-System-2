@@ -1,5 +1,6 @@
-package service.ManageService;
+package service.ManageService._stub;
 
+import VO.ChangeHotelVO;
 import VO.CommonMemberVO;
 import VO.CompanyMemberVO;
 import VO.GetVO;
@@ -7,27 +8,16 @@ import VO.HotelVO;
 import VO.MarketStaffVO;
 import VO.MemberTypeVO;
 import VO.UserVO;
-import VO.ChangeHotelVO;
 
 /**
- * 所有客户管理界面所需要的服务
+ * 
  * @author insomnia
- * @version Oct 15, 2016 
+ * @version Oct 16,2016
  */
 
+public class ManageService_stub {
+	
 
-/**
- * 网站管理人员：添加酒店，修改酒店信息，获得酒店的信息，
- *          用户管理：添加网站营销人员，
- *                 查看网站营销人员、用户、酒店工作人员
- *                 修改网站营销人员、用户、酒店工作人员
- * 用户：修改自己的信息，获得自己的信息，获得会员信息类型
- * 酒店工作人员：获得酒店信息，修改酒店信息
- * 网站营销人员：信用充值
- * @author insomnia
- * @version Oct 15, 2016
- */
-public interface ManageService {
 	
 	/**
 	 * 给用户充值
@@ -36,7 +26,13 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public boolean recharge (String client,int number);
+	public boolean recharge (String client,int number){
+		if (get.getGetVO().){
+			return true;
+		}else{
+			return false;
+		}
+	}
 	
 	/**
 	 * 添加一个网站营销人员
@@ -119,9 +115,6 @@ public interface ManageService {
 	 * @version Oct 15, 2016
 	 */
 	public boolean registerCompanyMember(CompanyMemberVO companyMember);
-	
-	
-	
 	
 	
 	

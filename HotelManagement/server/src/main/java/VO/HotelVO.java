@@ -50,5 +50,18 @@ public class HotelVO implements Serializable {
 		this.pointNumber =pointNumber;
 		this.co_enterprises=co_enterprises;
 	}
+	
+	public HotelVO getHotelVO(){
+		return new HotelVO( hotelName,
+					 intro ,
+					 address,
+					 businessArea,
+					 service,
+					 star,
+					 staffName,
+					 point,
+					 pointNumber,
+					 co_enterprises);
+	}
 
 }

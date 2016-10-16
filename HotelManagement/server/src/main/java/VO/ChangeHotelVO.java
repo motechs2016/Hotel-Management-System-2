@@ -62,5 +62,10 @@ public class ChangeHotelVO implements Serializable {
 		this.pointNumber =pointNumber;
 		this.co_enterprises=co_enterprises;
 	}
+	
+	public ChangeHotelVO getChangeHotelVO(){
+		return new ChangeHotelVO(client,type,hotelName,intro,address,businessArea,service,star,staffName,point,pointNumber,co_enterprises);
+	}
+	
 
 }

@@ -38,5 +38,10 @@ public class UserVO  implements Serializable{
 		this.enterpriseName=enterpriseName;
 		
 	}
+	
+	
+	public UserVO getUserVO(){
+		return new UserVO(name,type,contact,birthday,rank,credit,enterpriseName);
+	}
 
 }

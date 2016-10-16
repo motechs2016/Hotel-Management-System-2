@@ -21,5 +21,9 @@ public class CompanyMemberVO implements Serializable {
 		this.rank=rank;
 		this.enterPriseName=enterPriseName;
 	}
+	
+	public CompanyMemberVO getCompanyMemberVO(){
+		return new CompanyMemberVO(client,rank,enterPriseName);
+	}
 
 }

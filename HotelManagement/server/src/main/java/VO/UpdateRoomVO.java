@@ -29,4 +29,9 @@ public class UpdateRoomVO implements Serializable{
         this.hotelManagerID=hotelManagerID;
         this.roomType=roomType;
     }
+    
+    
+    public UpdateRoomVO getUpdateRoomVO(){
+    	return new UpdateRoomVO(hotelManagerID,roomType,change);
+    }
 }

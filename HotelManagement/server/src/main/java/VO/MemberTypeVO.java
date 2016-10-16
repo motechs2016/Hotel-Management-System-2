@@ -17,5 +17,9 @@ public class MemberTypeVO  implements Serializable{
 		this.allMemberTypeInfo=allMemberTypeInfo;
 		this.userMemberType=userMemberType;
 	}
+	
+	public MemberTypeVO getMemberTypeVO(){
+		return new MemberTypeVO(userMemberType,allMemberTypeInfo);
+	}
 
 }

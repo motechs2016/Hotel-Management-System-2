@@ -30,4 +30,8 @@ public class RoomVO implements Serializable{
         this.familyRoom=familyRoom;
         this.strandRoom=strandRoom;
     }
+    
+    public RoomVO getRoomVO(){
+    	return new RoomVO(strandRoom,doubleRoom,familyRoom);
+    }
 }

@@ -27,4 +27,8 @@ public class RegisterVO implements Serializable {
     	this.tel=tel;
     	this.birthday=birthday;
     }
+    
+    public RegisterVO getRegisterVO(){
+    	return new RegisterVO(userType, name, password, tel, birthday);
+    }
 }

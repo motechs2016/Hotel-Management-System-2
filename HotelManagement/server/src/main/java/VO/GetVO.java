@@ -22,5 +22,9 @@ public class GetVO implements Serializable {
 		this.clientname=clientname;
 		this.type=type;
 	}
+	
+	public GetVO getGetVO(){
+		return new GetVO(clientname,type);
+	}
 
 }

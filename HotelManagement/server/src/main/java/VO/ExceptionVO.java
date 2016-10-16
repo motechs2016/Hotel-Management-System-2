@@ -21,4 +21,8 @@ public class ExceptionVO implements Serializable{
 		 this.exception=exception;
 		 
 	}
+	
+	public ExceptionVO getExceptionVO(){
+		return new ExceptionVO(orderID,orderType,exception);
+	}
 }
