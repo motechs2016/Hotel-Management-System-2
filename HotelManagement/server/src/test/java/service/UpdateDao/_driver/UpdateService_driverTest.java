@@ -11,7 +11,7 @@ import util.Message;
 import util.OrderType;
 import util.RoomType;
 
-public class UpdateService_driver {
+public class UpdateService_driverTest {
     static UpdateService updateService;
     @BeforeClass
     public static void before(){

@@ -9,7 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import util.UserType;
 
-public class StrategyDao_driver {
+public class StrategyDao_driverTest {
 
     static StrategyDao strategyDao;
     @BeforeClass

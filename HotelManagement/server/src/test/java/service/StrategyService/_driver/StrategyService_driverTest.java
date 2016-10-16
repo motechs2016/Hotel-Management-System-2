@@ -10,7 +10,7 @@ import service.StrategyService._stub.StrategyService_stub;
 import util.Message;
 import util.UserType;
 
-public class StrategyService_driver {
+public class StrategyService_driverTest {
 
     static StrategyService strategyService;
     @BeforeClass

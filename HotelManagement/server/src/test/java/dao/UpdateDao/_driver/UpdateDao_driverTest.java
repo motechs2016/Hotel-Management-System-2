@@ -9,7 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import util.RoomType;
 
-public class UpdateDao_driver {
+public class UpdateDao_driverTest {
 
     static UpdateDao updateDao;
     @BeforeClass
