@@ -8,7 +8,7 @@ import PO.MemberInfoPO;
 import PO.UserPO;
 
 
-/*
+/**
  * 所有客户管理逻辑所需要的服务
  * @author insomnia
  * @version Oct 15, 2016 
