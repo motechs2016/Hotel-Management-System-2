@@ -37,8 +37,8 @@ public class OrderService_stub implements OrderService {
     }
 
     public Message addAnOrder(OrderInfoVO orderInfoVO) {
-        OrderInfoVO orderInfoVO1=orderInfoVO.getOrderInfoVO();
-        if(orderInfoVO1!=null){
+        if (orderInfoVO!=null){
+            OrderInfoVO orderInfoVO1=orderInfoVO.getOrderInfoVO();
             return Message.SUCCESS;
         }else{
             return Message.FAIL;
