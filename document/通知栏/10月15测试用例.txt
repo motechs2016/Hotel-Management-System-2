@@ -1,1 +1,0 @@
-006 评价酒店 第三天下面加入 AssessHotel.Input.Point 测试套件都有它
