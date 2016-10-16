@@ -1,9 +1,9 @@
 package util;
 
 public enum commentMessage {
-	name,
-	comment,
-	time,
-	point,
+	SUCCESS,
+	FAIL,
+	LESS_WORD,
+    FORGET_POINT
 	
 }

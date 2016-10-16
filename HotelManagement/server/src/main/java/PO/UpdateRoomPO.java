@@ -15,6 +15,9 @@ public class UpdateRoomPO {
      * 酒店工作人员的用户名
      */
     public String hotelManagerID;
+
+
+
     /**
      * 要更新的房间类型
      */
@@ -28,5 +31,16 @@ public class UpdateRoomPO {
         this.change=change;
         this.hotelManagerID=hotelManagerID;
         this.roomType=roomType;
+    }
+    public String getHotelManagerID() {
+        return hotelManagerID;
+    }
+
+    public RoomType getRoomType() {
+        return roomType;
+    }
+
+    public int getChange() {
+        return change;
     }
 }

@@ -28,4 +28,9 @@ public class StrategyVO implements Serializable {
         this.discount=discount;
         this.userType=userType;
     }
+
+    public StrategyVO getStrategyVO(){
+        return new StrategyVO(userType,content,discount);
+
+    }
 }

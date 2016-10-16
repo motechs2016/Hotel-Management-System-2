@@ -11,7 +11,6 @@ public class StrategyPO {
      */
     public UserType userType;
 
-
     /**
      * 促销策略的名称
      */
@@ -20,6 +19,12 @@ public class StrategyPO {
      * 促销策略打折数
      */
     public double discount;
+
+    public StrategyPO(UserType userType, String content, double discount) {
+        this.userType = userType;
+        this.content = content;
+        this.discount = discount;
+    }
 
     public UserType getUserType() {
         return userType;
