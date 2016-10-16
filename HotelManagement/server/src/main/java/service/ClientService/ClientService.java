@@ -2,7 +2,8 @@ package service.ClientService;
 import java.util.ArrayList;
 
 import VO.HotelVO;
-import util.commentMessage;
+import util.CommentMessage;
+
 /**
  * 负责实现客户管理界面所需要的服务
  * @author lichen
@@ -25,7 +26,7 @@ public interface ClientService {
 	 * @author lichen
 	 * @version 2016年10月15日
 	 */
-	public commentMessage submitComment(String name,String HotelName,String comment,int star);
+	public CommentMessage submitComment(String name, String HotelName, String comment, int star);
 	/**
 	 * 提交评论
 	 * @param name 用户名

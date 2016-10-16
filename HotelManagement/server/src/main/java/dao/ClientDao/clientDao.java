@@ -21,7 +21,7 @@ import PO.OrderPO;
  * @version 2016年10月15日
  */
 
-public interface clientDao {
+public interface ClientDao {
 	/**
 	 * 界面创建客户的时候获取可用ID
 	 * @return ID（供界面显示）
@@ -36,7 +36,7 @@ public interface clientDao {
 	 * @author lichen
 	 * @version 2016年10月15日
 	 */
-	public HotelPO getHotelList(String address,String area,String price,String star,String grade);
+	public HotelPO[] getHotelList(String address,String area,String price,String star,String grade);
 	/**
 	 * 获得酒店列表
 	 * @param address 地址

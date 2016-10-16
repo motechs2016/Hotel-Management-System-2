@@ -23,6 +23,7 @@ public class OrderService_stub implements OrderService {
     }
 
     public Message changeOrder(ExceptionVO exceptionVO) {
+        ExceptionVO exceptionVO1=exceptionVO.getExceptionVO();
         return Message.SUCCESS;
     }
 
@@ -31,11 +32,13 @@ public class OrderService_stub implements OrderService {
     }
 
     public boolean checkSixHour(OrderInfoVO orderInfo) {
+        OrderInfoVO orderInfoVO1=orderInfo.getOrderInfoVO();
         return true;
     }
 
     public Message addAnOrder(OrderInfoVO orderInfoVO) {
-        if(orderInfoVO!=null){
+        OrderInfoVO orderInfoVO1=orderInfoVO.getOrderInfoVO();
+        if(orderInfoVO1!=null){
             return Message.SUCCESS;
         }else{
             return Message.FAIL;

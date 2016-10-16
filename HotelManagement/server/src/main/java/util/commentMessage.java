@@ -1,6 +1,6 @@
 package util;
 
-public enum commentMessage {
+public enum CommentMessage {
 	SUCCESS,
 	FAIL,
 	LESS_WORD,

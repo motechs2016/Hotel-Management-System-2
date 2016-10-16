@@ -6,7 +6,7 @@ package PO;
  */
 public class CommentPO {
 	/**订单编号*/
-	int orderID;
+	String orderID;
 	/**用户名*/
 	String userName;
 	/**酒店名称*/
@@ -15,7 +15,7 @@ public class CommentPO {
 	String time;
 	/**评价内容*/
 	String content;
-	public CommentPO(int orderID,
+	public CommentPO(String  orderID,
 			        String userName,
 					String hotelName,
 					String time,
@@ -26,7 +26,7 @@ public class CommentPO {
 		this.time=time;
 		this.content=content;
 	}
-	public int getOrderID() {
+	public String  getOrderID() {
 		return orderID;
 	}
 	public String getUserName() {
