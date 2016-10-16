@@ -1,9 +1,10 @@
 package service.LoginService;
 import java.util.ArrayList;
 
+import VO.LoginVO;
 import VO.RegisterVO;
 import util.Message;
-import util.registerMessage;
+
 /**
  * 负责实现登陆界面所需要的服务
  * @author lichen
@@ -19,25 +20,20 @@ import util.registerMessage;
  */
 public interface LoginService {
 	/**
-	 * 登陆／注册界面
-	 * @return ID
-	 * @author lichen
-	 * @version 2016年10月15日
-	 */
-	public Message login(RegisterVO loginVO);
-	/**
 	 * 登陆
 	 * @param loginVO 登陆信息
 	 * @return loginVO
 	 * @author lichen
 	 * @version 2016年10月15日
 	 */
-	public registerMessage register(RegisterVO registerVO);
+	public Message login(LoginVO loginVO);
 	/**
 	 * 注册
 	 * @param registerVO 注册信息表单
-	 * @return registerMessage 注册信息
+	 * @return Message 注册信息
 	 * @author lichen
 	 * @version 2016年10月15日
 	 */
+	public Message register(RegisterVO registerVO);
+
 }
