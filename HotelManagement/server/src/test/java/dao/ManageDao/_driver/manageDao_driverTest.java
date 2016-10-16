@@ -17,7 +17,7 @@ import util.UserType;
  * @author insomnia
  * @version Oct 16,2016
  */
-public class manageDao_driverTest {
+public class ManageDao_driverTest {
 	
 	static ManageDao manageDao;
 	@BeforeClass
