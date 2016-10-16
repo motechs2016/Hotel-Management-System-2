@@ -10,7 +10,7 @@ public class UserPO {
 	/**密码*/
 	String password;
 	/**类型*/
-	char type;
+	char type;//可能需要把这里改一下
 	
 	public UserPO(String name,String password,char type){
 		this.name=name;

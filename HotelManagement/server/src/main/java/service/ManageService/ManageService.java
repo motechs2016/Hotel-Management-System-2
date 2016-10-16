@@ -110,7 +110,7 @@ public interface ManageService {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public Message registerCommomMember(CommonMemberVO commonMember);
+	public Message registerCommonMember(CommonMemberVO commonMember);
 	
 	/**
 	 * 用户注册企业会员

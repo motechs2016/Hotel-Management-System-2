@@ -4,9 +4,15 @@ import PO.ClientPO;
 import PO.HotelPO;
 import PO.MemberInfoPO;
 import PO.UserPO;
+import dao.ManageDao.ManageDao;
 import util.UserType;
 
-public class ManageDao_stub {
+/**
+ * 
+ * @author insomnia
+ * @version Oct 16,2016
+ */
+public class ManageDao_stub implements ManageDao {
 	
 
 	/**

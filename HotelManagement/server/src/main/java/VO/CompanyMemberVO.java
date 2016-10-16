@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class CompanyMemberVO implements Serializable {
 
 	/**用户名*/
-	String client;
+	public String client;
 	/**会员等级*/
 	int rank;
 	/**企业名称*/

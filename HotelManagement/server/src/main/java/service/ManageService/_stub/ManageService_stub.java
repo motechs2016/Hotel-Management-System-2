@@ -8,6 +8,7 @@ import VO.HotelVO;
 import VO.MarketStaffVO;
 import VO.MemberTypeVO;
 import VO.UserVO;
+import service.ManageService.ManageService;
 import util.Message;
 import util.UserType;
 
@@ -17,7 +18,7 @@ import util.UserType;
  * @version Oct 16,2016
  */
 
-public class ManageService_stub {
+public class ManageService_stub implements ManageService  {
 	
 
 	
@@ -163,8 +164,14 @@ public class ManageService_stub {
 	 * @author insomnia
 	 * @version Oct 15, 2016
 	 */
-	public Message registerCommomMember(CommonMemberVO commonMember){
-		return Message.SUCCESS;
+	public Message registerCommonMember(CommonMemberVO commonMember){
+		if(commonMember.client.equals("000")){
+			return Message.SUCCESS;
+		}else if(commonMember.client.equals("001")){
+			return Message.FAIL;
+		}else{
+			return Message.NOT_COMPLETE;
+		}	
 	}
 	
 	/**
@@ -175,7 +182,14 @@ public class ManageService_stub {
 	 * @version Oct 15, 2016
 	 */
 	public Message registerCompanyMember(CompanyMemberVO companyMember){
-		return Message.SUCCESS;
+		if(companyMember.client.equals("000")){
+			return Message.SUCCESS;
+		}else if(companyMember.client.equals("001")){
+			return Message.FAIL;
+		}else{
+			return Message.NOT_COMPLETE;
+		}
+		
 	}
 	/**
 	 * 获得酒店的客房价格
@@ -184,7 +198,7 @@ public class ManageService_stub {
 	 * @author insomnia
 	 */
 	public double[] getPrices(String hotelID ){
-		return new double []{2,35,75};
+		return new double []{100,120,150};
 	}
 	
 	
