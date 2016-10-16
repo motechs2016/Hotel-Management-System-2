@@ -15,10 +15,18 @@ public class RoomPO implements Serializable{
      */
     public int doubleRoom;
 
+
+
     /**
      * 家庭房的数目
      */
     public int familyRoom;
+
+    public RoomPO(int strandRoom, int doubleRoom, int familyRoom) {
+        this.strandRoom = strandRoom;
+        this.doubleRoom = doubleRoom;
+        this.familyRoom = familyRoom;
+    }
 
     public int getStrandRoom() {
         return strandRoom;

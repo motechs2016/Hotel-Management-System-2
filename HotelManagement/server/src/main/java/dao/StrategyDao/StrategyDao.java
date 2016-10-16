@@ -2,7 +2,6 @@ package dao.StrategyDao;
 
 
 import PO.StrategyPO;
-import VO.StrategyVO;
 import util.UserType;
 
 
@@ -20,7 +19,7 @@ public interface StrategyDao {
      * @aurhor mingzhizhe
      * @version 16/10/15
      */
-    StrategyVO[] getStrategy(UserType type , String hotelid);
+    StrategyPO[] getStrategy(UserType type , String hotelid);
 
     /**
      * 增加新的促销策略
@@ -33,10 +32,10 @@ public interface StrategyDao {
 
     /**
      * 移除原有的促销策略
-     * @param strategyVO 促销策略的VO对象
+     * @param strategyPO 促销策略的VO对象
      * @return 移除促销策略是否成功
      * @aurhor mingzhizhe
      * @version 16/10/15
      */
-    boolean removeStrategy(StrategyVO strategyVO);
+    boolean removeStrategy(StrategyPO strategyPO);
 }

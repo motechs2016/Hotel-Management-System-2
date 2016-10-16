@@ -1,8 +1,7 @@
-package dao.updateDao;
+package dao.UpdateDao;
 
 import PO.RoomPO;
 import PO.UpdateRoomPO;
-import util.Message;
 
 /**
  * Created by Dell on 2016/10/15.
@@ -20,6 +19,6 @@ public interface UpdateDao {
      * @param updateRoomPO 更新房源信息的PO
      * @return
      */
-    Message updateRoomInfo(UpdateRoomPO updateRoomPO);
+    boolean updateRoomInfo(UpdateRoomPO updateRoomPO);
 
 }

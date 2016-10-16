@@ -1,6 +1,7 @@
 package VO;
 
 import util.OrderType;
+import util.RoomType;
 
 import java.io.Serializable;
 
@@ -11,36 +12,36 @@ import java.io.Serializable;
  */
 public class OrderInfoVO implements Serializable{
 	/**订单编号 */
-	String orderID;
+	public String orderID;
 	/**客户用户名*/
-	String userName;
+	public String userName;
 	/**订单类型*/
-	OrderType orderType;
+	public OrderType orderType;
 	/**酒店名称*/
-	String hotelName;
+	public String hotelName;
 	/** 房间类型*/
-	String roomType;
+	public RoomType roomType;
 	/** 房间数量*/
-	int  numberOfRoom;
+	public int  numberOfRoom;
 	/** 预计入住人数*/
-	int expectedNumberOfUser;
+	public int expectedNumberOfUser;
 	/** 有无儿童*/
-	boolean hasChild;
+	public boolean hasChild;
 	/**预计入住时间 */
-	String expectedInTime;
+	public String expectedInTime;
 	/**预计退房时间 */
-	String  expectedOutTime;
+	public String  expectedOutTime;
 	/**最晚执行时间 */
-	String lastestTime;
+	public String lastestTime;
 	/**实际入住时间 */
-	String actualInTime;
+	public String actualInTime;
 	/**实际退房时间 */
-	String actualOutTime;
+	public String actualOutTime;
 	/**异常情况 */
-	String  exception;
+	public String  exception;
 	/**撤销时间 */
-	String cancelTime;
-	public OrderInfoVO(String orderID,String userName,OrderType orderType,String hotelName,String roomType,int  numberOfRoom,
+	public String cancelTime;
+	public OrderInfoVO(String orderID,String userName,OrderType orderType,String hotelName,RoomType roomType,int  numberOfRoom,
 			           int expectedNumberOfUser,boolean hasChild,String expectedInTime,String  expectedOutTime,
 	                   String lastestTime, String actualInTime,String actualOutTime, String  exception,
 	                   String cancelTime) {
