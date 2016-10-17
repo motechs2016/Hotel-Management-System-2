@@ -27,6 +27,7 @@ public interface ClientDao {
 	 * @return ID（供界面显示）
 	 * @author lichen
 	 * @version 2016年10月15日
+	 * 测试提交啊啊啊啊啊啊啊啊啊
 	 */
 	public boolean addComment(CommentPO commentPO);
 	/**
