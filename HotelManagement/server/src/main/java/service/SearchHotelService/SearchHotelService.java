@@ -15,6 +15,17 @@ public interface SearchHotelService {
 	 * @version 2016年10月15日
 	 */
 	public HotelVO[] getHotelList(String address,String area,String price,String star,String grade);
-
-	public HotelVO
+	/**
+	 * 提交评论
+	 * @param address 地址
+	 * @param area 商圈
+	 * @param price 价格
+	 * @param star 星级
+	 * @param grade 评分
+	 * @return HotelNameVO[] 返回酒店列表
+	 * @author lichen
+	 * @version 2016年10月15日
+	 */
+	public HotelVO getHotelInfo (String hotelName);
+	
 }

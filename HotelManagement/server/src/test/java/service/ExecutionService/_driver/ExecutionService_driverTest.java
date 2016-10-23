@@ -24,7 +24,7 @@ public class ExecutionService_driverTest {
         assertNotNull(executionService.getOrderInfo("root"));
     }
     @Test
-    public void changeOrderTest(){
-        assertEquals(Message.SUCCESS,executionService.changeOrder(new ExceptionVO("111111111111111111", OrderType.RevokedOrder,"堵车")));
+    public void changeOrderStateTest(){
+        assertEquals(Message.SUCCESS,executionService.changeOrderState("111111111111111111", OrderType.RevokedOrder));
     }
 }
