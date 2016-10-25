@@ -10,6 +10,7 @@ import java.io.Serializable;
  * @version 16/10/15
  */
 public class StrategyVO implements Serializable {
+    private static final long serialVersionUID = -6537411091515104294L;
     /**
      * 促销策略的所有者类型
      */

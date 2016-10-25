@@ -7,6 +7,7 @@ import java.io.Serializable;
  * @version 
  */
 public class MarketStaffVO implements Serializable {
+	private static final long serialVersionUID = -2259705638570877787L;
 	/**用户名*/
 	public String name;
 	/**密码*/

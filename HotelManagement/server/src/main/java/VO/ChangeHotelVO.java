@@ -9,7 +9,9 @@ import util.UserType;
  * @version Oct 15,2016
  */
 public class ChangeHotelVO implements Serializable {
-	
+
+	private static final long serialVersionUID = 8140954093492810162L;
+
 	public enum Type {type1,type2,type3,type4};//类型的个数有待修改，，，
 	/**修改的客户名*/
 	public String client;

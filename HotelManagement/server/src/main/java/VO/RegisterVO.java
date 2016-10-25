@@ -10,6 +10,7 @@ import util.UserType;
  * 
  */
 public class RegisterVO implements Serializable {
+    private static final long serialVersionUID = 3567170679855642290L;
     /*用户类型*/
 	UserType userType;
 	/*用户名*/

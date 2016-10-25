@@ -11,6 +11,7 @@ import java.io.Serializable;
  * @version 2016/10/15 18:44
  */
 public class OrderInfoVO implements Serializable{
+	private static final long serialVersionUID = -2675153482616317498L;
 	/**订单编号 */
 	public String orderID;
 	/**客户用户名*/

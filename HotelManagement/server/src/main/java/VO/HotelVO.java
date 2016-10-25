@@ -8,6 +8,7 @@ import java.io.Serializable;
  */
 
 public class HotelVO implements Serializable {
+	private static final long serialVersionUID = 7631773984590807125L;
 	/**酒店用户名*/
 	String hotelName;
 	/**酒店介绍*/

@@ -13,7 +13,8 @@ import util.UserType;
 
 
 public class GetVO implements Serializable {
-	
+
+	private static final long serialVersionUID = -4419149364965710000L;
 	/**用户名*/
 	String clientname;
 	/**用户类型*/

@@ -11,6 +11,7 @@ import java.io.Serializable;
  * @version 16/10/15
  */
 public class UpdateRoomVO implements Serializable{
+    private static final long serialVersionUID = -7393470043046754959L;
     /**
      * 酒店工作人员的用户名
      */

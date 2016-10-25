@@ -9,6 +9,7 @@ import util.OrderType;
 import java.io.Serializable;
 
 public class ExceptionVO implements Serializable{
+	private static final long serialVersionUID = -3215041482645659128L;
 	/**订单编号　*/
 	String orderID;
 	/**订单类型　*/

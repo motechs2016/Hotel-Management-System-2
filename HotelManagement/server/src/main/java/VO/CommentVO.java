@@ -1,13 +1,16 @@
 package VO;
 
+import java.io.Serializable;
+
 /**
  * 评论信息的VO包
  * @author mingzhizhe
  * @version 16/10/16
  */
-public class CommentVO {
+public class CommentVO implements Serializable{
 
 
+    private static final long serialVersionUID = 2284063223631392080L;
     /**
      * 评价信息的用户名字
      */

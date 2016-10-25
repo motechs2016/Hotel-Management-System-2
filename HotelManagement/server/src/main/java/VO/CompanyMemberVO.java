@@ -9,6 +9,7 @@ import java.io.Serializable;
 
 public class CompanyMemberVO implements Serializable {
 
+	private static final long serialVersionUID = -7872110267860020151L;
 	/**用户名*/
 	public String client;
 	/**会员等级*/

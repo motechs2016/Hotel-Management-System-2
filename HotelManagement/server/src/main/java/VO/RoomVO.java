@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by Dell on 2016/10/15.
  */
 public class RoomVO implements Serializable{
+    private static final long serialVersionUID = -5278371800601421796L;
     /**
      * 标间的数目
      */

@@ -8,7 +8,8 @@ import java.io.Serializable;
  */
 
 public class CommonMemberVO  implements Serializable{
-	
+
+	private static final long serialVersionUID = -103023456812251282L;
 	/**用户名*/
 	public String client;
 	/**会员等级*/

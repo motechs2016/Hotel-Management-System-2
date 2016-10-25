@@ -8,6 +8,7 @@ import java.io.Serializable;
  * @version 16/10/16
  */
 public class LoginVO implements Serializable {
+    private static final long serialVersionUID = 3744902086568111967L;
     /**
      * 用户名的VO
      */

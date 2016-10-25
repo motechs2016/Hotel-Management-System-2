@@ -9,6 +9,7 @@ import util.UserType;
  * @version  Oct 15,2016
  */
 public class UserVO  implements Serializable{
+	private static final long serialVersionUID = 7892106393136523575L;
 	/**用户名*/
 	public String name;
 	/**用户的类型*/
